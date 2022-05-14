@@ -57,7 +57,7 @@ jobs:
         with:
           tag_name: ${{ github.run_number }}
           release_name: Release ${{ github.run_number }}
-          body: Release notes can be found in the docs.
+          body: Release ${{ github.ref }}
           draft: false
           prerelease: false
       - name: Download artifact
